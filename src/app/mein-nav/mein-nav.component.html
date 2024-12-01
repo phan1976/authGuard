@@ -1,11 +1,10 @@
-<div *ngIf="isLoggedIn$ | async as isLoggedIn">
+<div>
     Day la navBar
         <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
         &nbsp;
         <a [routerLink]="['/about']" routerLinkActive="router-link-active" >About</a>
         
         &nbsp;
-        <button (click)="logout()" *ngIf="isLoggedIn">Log Out</button>
+        <button>Log Out</button>
     
 </div>
-<router-outlet></router-outlet>
